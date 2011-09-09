@@ -1,1 +1,20 @@
 User guide: http://wwww.adamgriffiths.co.uk/user_guide/asset/
+
+BASIC USAGE:
+
+In your controller, add:
+
+```
+$this->load->spark('Asset/1.0.1');
+$this->load->helper('asset');
+```
+This will load the Asset spark, (be sure to replace 1.0.1 with the version you have installed) and the loading in the helper will automatically load the ag_asset lib.
+
+Then, in your view, you can use:
+
+```
+css('style.css');
+js('site.js');
+img('logo.jpg');
+asset_path() . '/docs/download.pdf';
+```

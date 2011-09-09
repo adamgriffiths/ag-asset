@@ -191,4 +191,3 @@ class AG_Asset
 	}	
 	
 }
-
