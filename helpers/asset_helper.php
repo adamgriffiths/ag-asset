@@ -56,11 +56,11 @@ if(!function_exists('js')) {
 		$CI =& get_instance();
 		if($echo)
 		{
-			echo $CI->ag_asset->load_js($filename, $subfolder);
+			echo $CI->ag_asset->load_script($filename, $subfolder);
 		}
 		else
 		{
-			return $CI->ag_asset->load_js($filename, $subfolder);
+			return $CI->ag_asset->load_script($filename, $subfolder);
 		}
 	}
 }
